@@ -1,0 +1,62 @@
+name: awas
+description: Automatic Car Accident Detector and Emergency Dispatcher.
+
+publish_to: "none"
+
+version: 0.1.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_neumorphic:
+    git: https://github.com/360solusiteknologi/neumorphic.git
+
+  bloc: ^6.0.2
+  catcher: ^0.3.17
+  equatable: ^1.2.3
+  firebase_analytics: ^6.0.0
+  firebase_auth: ^0.18.0
+  firebase_core: ^0.5.0
+  fluro: ^1.6.3
+  flutter_bloc: ^6.0.1
+  flutter_blue: ^0.7.2
+  formz: ^0.3.0
+  get_it: ^4.0.4
+  google_sign_in: ^4.5.1
+  lint: ^1.2.0
+  logger: ^0.9.2
+  meta: any   # This resolve dependencies conflict.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.7.5
+  flutter_native_splash: ^0.1.9
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+  fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/icons.ttf
+
+flutter_icons:
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: assets/images/icon.png
+  android: true
+  ios: true
+  image_path: assets/images/icon.png
+
+flutter_native_splash:
+  android_disable_fullscreen: true
+  color: "#ffffff"
+  fill: false
+  image: assets/images/splash.png
